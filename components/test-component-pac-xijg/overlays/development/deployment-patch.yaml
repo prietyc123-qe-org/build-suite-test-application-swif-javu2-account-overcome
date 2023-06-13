@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-pac-xijg
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pkumari_org/build-e2e-hvcr-tenant/build-suite-test-application-swif/test-component-pac-xijg@sha256:d7d8ad610c6eadd1e0506475eb774c4c9bb673bb8dbd862cc6fbd53915594139
+        name: my-nginx
+        resources: {}
+status: {}
